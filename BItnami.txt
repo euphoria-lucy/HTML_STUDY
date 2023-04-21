@@ -1,0 +1,60 @@
+root : C:\Bitnami\wampstack-8.0.3-0\apache2\htdocs\php_test
+서버 : 서버가 실행되어야 함
+  * root : http://localhost/
+  * root : C:\Bitnami\wampstack-8.0.3-0\apache2\htdocs\php_test
+
+server언어 : http://localhost/php_test/1.php
+
+---------------------------------------------------------------------
+
+<< 문법 특징 >>
+1. 자바문법과 거의 동일 (for, if, while, do-while...)
+2. 변수명 앞에 $를 붙임 type은 필요X
+ class test {
+   private int age;
+ }
+
+  $age = 9;
+  $age = "임성진";
+
+3. 변수명은 숫자로 시작할 수 없고 공백이 포함될 수 없음
+4. 변수명은 대소문자 구분
+
+* php ini : php 설정파일
+      php의 모든 설정을 해주는 파일
+       1) display
+    2) opcache
+
+Parse error : syntax error, unexpected token
+
+< 배열 (Array) >
+1. array 함수 이용
+     array ("임성진", "박성한", "박지성");
+
+2. range 함수 이용
+    $arr2 = range(2, 9) // 2,3,4,5,6,7,8,9의 배열
+    $arr3 = range(2, 9, 2)// 2,4,6,8의 배열
+    $arr4 = range('L', 'Z') // L...Z의 배열
+
+  java = int arr = new int[3];
+   < PHP >
+   $arr[0] = "LIMSUNGJIN";
+   $arr[1] = "PARKSUNGHAN";
+   $arr[2] = "PARKJISUNG";
+
+* 배열의 길이 구하는 함수 : sizeof(함수이름)
+
+---------------------------------------------------
+
+<< 문자열 함수 >>
+1. strlen(문자열) : 문자열의 길이 반환 (공백포함) ★ 공백포함 문자열의 길이 구하기 (회원가입 로그인할 때 사용) ★
+2. strcmp (문자열1, 문자열2) : 문자열 비교하는데 일치하면 0, 불일치면 1
+3. strpos(문자열1, 문자2) : 문자열1에서 문자2가 있는 인덱스를 반환
+4. strtolower( ) : 소문자변환
+5. strtoupper( ) : 대문자변환
+6. substr( ) : 문자열 추출
+
+----------------------------------------------------
+< PHP 사이트 >
+php.net
+phpschool.com
